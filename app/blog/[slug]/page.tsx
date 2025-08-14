@@ -26,9 +26,9 @@ export default async function BlogPostPage({ params }: Props) {
   );
   const post = posts.find((post) => post.slug === params.slug)!;
   return (
-    <div>
+    <main>
       <h1>{post.title}</h1>
       <p>{post.content}</p>
-    </div>
+    </main>
   );
 }

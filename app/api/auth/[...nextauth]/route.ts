@@ -4,8 +4,6 @@ import type { NextAuthOptions } from "next-auth";
 import GithubProvider from "next-auth/providers/github";
 import { prisma } from "@/lib/prisma"; // Adjust the import path as necessary
 
-console.log("NEXTAUTH_SECRET:", process.env.NEXTAUTH_SECRET);
-
 export const authOptions: NextAuthOptions = {
   secret: process.env.NEXTAUTH_SECRET,
   adapter: PrismaAdapter(prisma),

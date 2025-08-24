@@ -1,3 +1,8 @@
+MySpace Dupe
+
+This project is a modern recreation of the classic MySpace experience, built with Next.js and deployed on Vercel. The main focus is implementing secure user authentication with GitHub using NextAuth.js, storing users in a Neon-hosted Postgres database through Prisma, and enabling follow/unfollow functionality between users. The application uses API routes for both queries and mutations: fetching all users for display, retrieving individual user profiles, and updating user records when actions such as following or editing profile information occur. These routes provide a clean separation between the client and database, while Prisma handles database schema management and queries. The project demonstrates how to integrate authentication, a relational database, and API-driven state changes into a single full-stack Next.js application.
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

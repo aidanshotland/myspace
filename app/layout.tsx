@@ -3,6 +3,7 @@ import "./globals.css";
 import NavMenu from "./NavMenu";
 import { Open_Sans } from "next/font/google";
 import AuthProvider from "./AuthProvider";
+import Link from "next/link";
 
 const myFont = Open_Sans({ weight: "400", subsets: ["latin"] });
 
@@ -23,6 +24,29 @@ export default function RootLayout({
           <div className="container">
             <NavMenu />
             <main>{children}</main>
+
+            <footer>
+              
+              <ul>
+                <li>
+                  <Link href={'/about'}>About</Link>
+                </li>{' '}
+                |
+                <li>
+                  <Link href={'https://my-portfolio-mmte.vercel.app/'}>
+                    Portfolio
+                  </Link>
+                </li>{' '}
+                |
+                <li>
+                  <Link href={'https://github.com/aidanshotland/myspace'}>Source Code</Link>
+                </li>{' '}
+                |
+                <li>
+                  <Link href={'https://nextjs.org'}>NextJS Docs</Link>
+                </li>
+              </ul>
+            </footer>
           </div>
         </body>
       </html>
